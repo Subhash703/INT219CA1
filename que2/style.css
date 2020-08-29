@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans",sans-serif;
+}
+
+body{
+    background-image: url('./img/background.jpg') ;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+.logo-outer{
+    height: 70px;
+    margin: 1rem 2rem;
+    position: relative;
+}
+.logo-outer img{
+    object-fit: contain;
+    height: 60px;
+}
+.menu-toggle-btn{
+    margin: 1rem;
+    cursor: pointer;
+    font-size: 3em;
+}
+
+.navigation-menu{
+    position: absolute;
+    left:-300px;
+    /* top: 70px; */
+    width:300px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction:column;
+    transition: all 0.5s ease-in-out;
+    z-index: 10;
+}
+.exit{
+    font-size: 2rem;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+
+}
+.navigation-menu a{
+    width:100%;
+    display: block;
+    /* margin-left: 1rem; */
+    font-size: 2em;
+    padding: 1rem 1rem;
+    margin-top: 2rem;
+    color: white;
+    text-transform: capitalize;
+}
+.navigation-menu a:hover{
+    color: teal;
+}
+.navigation-menu a i{
+    margin-right: 1rem;
+}
+.active{
+    left: 0;
+    display: block;
+    background-color: #111319;
+    color: white;
+}
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: contain;
+  }
+  
+.btn{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+}
+.btn i{
+    font-size: 4em;
+    color: white;
+}
+
+.home__text{
+    position: relative;
+    top: 200px;
+    opacity: 0;
+    color: #FFF;
+    font-size: 2em;
+    animation: fadeIn 3s ease-in-out initial;
+    transition: opacity 3s ease;
+    transition-delay: 1s;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0.2;
+    }
+    20%{
+        opacity: 0.4;
+    }
+    35%{
+        opacity: 0.6;
+    }
+    50%{
+        opacity: 0.8;
+    }
+    75%{
+        opacity: 0.9;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+

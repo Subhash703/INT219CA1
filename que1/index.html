@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="shortcut icon" href="">
+    <title>Book Your Hotel Online</title>
+    <link rel="stylesheet" href="./styles.css"/>
+
+</head>
+<body>
+    <div class="container">
+
+      <h2 style="text-align: center; color: aqua;">Click on this button , if you don't want to type everything ...😃</h2>
+      <button id="dummyData">Try Dummy data</button>
+        <h1 class="header">Hotel Booking Form </h1>
+        <hr>
+        <div class="form-outer">
+          <form action="#">
+            <div class="form-group">
+              <label for="title">Title*</label>
+              <select name="title" id="title" >
+                <option value="" selected></option>
+                <option value="Miss">Miss</option>
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="M"></option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="fullName">FullName*</label>
+              <input type="text" id="fullName">
+            </div>
+            <div class="form-group">
+              <label for="phoneNumber">Phone Number*</label>
+              <input type="number" id="phoneNumber">
+            </div>
+            <div class="form-group">
+              <label for="mobileNumber">Mobile Number</label>
+              <input type="number" id="mobileNumber">
+            </div>
+            <div class="form-group">
+              <label for="email">Email*</label>
+              <input type="email" id="email">
+            </div>
+            <div class="form-group">
+              <label for="street">Street Address</label>
+              <input type="text" id="street">
+            </div>
+            <div class="form-group">
+              <label for="town">Town*</label>
+              <input type="text" id="town" >
+            </div>
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" id="city">
+            </div>
+            <div class="form-group">
+              <label for="people">No Of people*</label>
+              <input type="number" id="people" >
+            </div>
+            <div class="form-group">
+              <label for="rooms">No Of Rooms*</label>
+              <input type="number" id="rooms" >
+            </div>
+            <div class="form-group">
+              <label for="date">Arriving Date*</label>
+              <input type="date" id="date" >
+            </div>
+            <div class="form-group">
+              <label for="nights">No Of Nights*</label>
+              <input type="number" id="nights" >
+            </div>
+            <div class="form-group">
+              <label for="occupance">Occupance</label>
+              <div class="radio-btns">
+                <input type="radio" id="single" name="occupance" value="single">
+                <label for="single">Single</label><br>
+                <input type="radio" id="twin" name="occupance" value="twin">
+                <label for="twin">Twin</label> <br>
+                <input type="radio" id="double" name="occupance" value="double">
+                <label for="double">Double</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="info">addination info</label>
+              <textarea name="add-info" id="info" rows="10" placeholder="Additional Inforamtion will help you in our better services"></textarea>
+            </div>
+            <div class="no-robot">
+              <div class="re-capacha-code">
+                <p class="code"></p>
+              </div>
+              <div class="capacha-img">
+                <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/in-progress-2-571393.png" alt="">
+              </div>
+              <input type="text" id="reCapCode" placeholder="Write above capacha code">
+            </div>
+            
+            <div class="submit-btn">
+              <button type="submit" id="submit">Submit</button>
+              
+            </div>
+          </form>
+        </div>
+      </div>
+    <script src="./app.js"></script>
+</body>
+</html>

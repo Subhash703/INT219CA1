@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ScDev : Vagitarian Caffe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <i style="color: white;" class="menu-toggle-btn fas fa-bars"></i>
+    <header>
+        <nav class="navigation-menu">
+        <div class="exit"><i class="fas fa-times"></i></div>
+          <a href="#"><i class="fas fa-home home"></i> Home</a>
+          <a href="#"><i class="fas fa-hotel"></i> About</a>
+          <a href="#"><i class="fab fa-buffer works"></i> Our Services</a>
+          <a href="#"><i class="fas fa-users team"></i>Appoinment</a>
+          <a href="#"><i class="fas fa-receipt"></i> Pay Bill</a>
+          <a href="#"><i class="fas fa-headset contact"></i> Contact</a>
+
+        </nav>
+    </header>
+    <div class="logo-outer">
+        <a href="#" class="logo"><img src="https://bcassetcdn.com/public/blog/wp-content/uploads/2019/07/18094833/the-red-cafe.png" alt="Logo"></a>
+    </div>
+    <video autoplay muted loop id="myVideo">
+        <source src="https://media-cdn.tripadvisor.com/media/video-v/13/f9/30/98/hotel-sweet-dream-restaurant_360.mp4" type="video/mp4" class="video">
+    </video>
+    <div class="home__text">
+        <h1>Welcome To Our Hotel</h1>
+    </div>
+    <div class="btn" onClick="changevid()">
+        <i class="fas fa-chevron-right"></i>
+    </div>
+    <script>
+    const menuBtn = document.querySelector('.fa-bars');
+    const navMenu = document.querySelector('.navigation-menu');
+    const exit = document.querySelector('.exit');
+
+
+    menuBtn.addEventListener('click',()=>{
+        navMenu.classList.toggle('active');
+    })
+    exit.addEventListener('click',()=>{
+        navMenu.classList.toggle('active');
+    });
+
+
+    //Play next video
+    const nextVid = document.querySelector('.btn');
+    const srcs = [
+        'https://media-cdn.tripadvisor.com/media/video-v/13/f9/30/98/hotel-sweet-dream-restaurant_360.mp4','https://ak.picdn.net/shutterstock/videos/1052825195/preview/stock-footage-food-delivery-in-the-restaurant-the-chef-prepares-food-in-the-restaurant-and-packs-it-panna-cotta.mp4'
+    ]
+    let i = 0;
+    document.querySelector('#myVideo').src=srcs[i];
+    nextVid.addEventListener('click',()=>{
+        i++;
+        if(i>=srcs.length){
+            i=0;
+        }
+        console.log(srcs[i]);
+        document.querySelector('#myVideo').src = srcs[i];
+    })
+    </script>
+</body>
+</html>

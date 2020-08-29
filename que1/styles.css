@@ -1,0 +1,170 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+  }
+  body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    font-family:'Montserrat', sans-serif;
+    
+  }
+  .container{
+    min-width:80%;
+    background:linear-gradient(to bottom,
+                #e0655c,
+                #f0ada8,
+                #d4aca9
+                );
+    min-height:80vh;
+    padding:1rem 2rem;
+  }
+  hr{
+    height:3px;
+    background-color:#111319;
+    border:none;
+    margin:1rem 0;
+  }
+
+  #dummyData{
+    padding: 0.3rem 1rem;
+    background-color: rgb(206, 28, 191);
+    color: white;
+    margin: 10px 400px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  form{
+    width:100%;
+    position:relative;
+  }
+  .form-group{
+    padding:0.5rem 0;
+    display:flex;
+  /*   align-items:center; */
+  }
+  .form-group label{
+    min-width:30%;
+    margin-right:2rem;
+    font-weight:800;
+    text-transform:capitalize;
+  }
+
+
+  select{
+    padding:0 0.5rem;
+  }
+  select option{
+    margin-top:5px;
+    background-color:#111319;
+    color:white;
+  }
+  .form-group input,
+  .form-group select{
+    height:30px;
+    font-size:1rem;
+    outline:none;
+  }
+  .form-group>input{
+    min-width:50%;
+    padding-left:0.2rem;
+  }
+  
+  
+  .radio-btns input{
+      height:14px;
+  }
+  .radio-btns label{
+      font-size:14px;
+  }
+  .form-group textarea{
+    min-width:50%;
+    padding:1rem 0.5rem;
+    outline:none;
+  }
+  .no-robot{
+    height:150px;
+    width:50%;
+    margin:1rem auto;
+    background:#FFF;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    position:relative;
+  }
+  .no-robot .re-capacha-code{
+    width:70%;
+    height:70px;
+    font-family:cursive;
+  }
+  .re-capacha-code .code{
+    transform:rotate(-5deg);
+    font-size:1.5rem;
+    transform-origin: bottom right 10px;
+  }
+  .no-robot input{
+    padding:0.4rem 1rem;
+    outline:none;
+  }
+  .capacha-img img{
+    height:80px;
+    object-fit:contain;
+    position:absolute;
+    right:2rem;
+    top:1rem;
+    cursor:pointer;
+  }
+  form .submit-btn{
+    width:4em;
+    margin:2rem auto;
+    
+  }
+
+  .error{
+      border:2px solid red;
+  }
+  .submit-btn button{
+    padding:0.5rem 1.5rem;
+    background:linear-gradient(to right, #0074d9,#042053,#0a365c,#0b89f0);
+    outline:none;
+    border:none;
+    cursor:pointer;
+    background-size: 400%;
+    font-size:1.2rem;
+    border-radius:5px;
+    color:white;
+    transition: background-size 0.5s ease-in;
+  }
+  .submit-btn button:hover{
+    background-size: 100%;
+  }
+
+  @media (min-width:420px){
+    .form-group>input{
+        flex: 1;
+        padding-left:0.2rem;
+      }
+  }
+  
+  @media (min-width:780px){
+    .form-group label{
+      min-width:20%;
+      margin-right:2rem;
+      font-weight: 800;
+      text-transform:capitalize;
+    }
+  }
+  @media (min-width:1200px){
+    .container{
+      min-width:1000px;
+    }
+    form-group textarea{
+      width: 70%;
+    }
+  }
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width:100%;
+            margin: 0 auto;
+            background: linear-gradient(to left,
+                                                #111319, #364b8b
+                                                );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        h1{
+            font-size: 3em;
+            animation: fade 2s ease infinite;
+            /* animation-delay: 0.2s; */
+        }
+
+        @keyframes fade{
+            0%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Registration has completed 🚀</h1>
+    </div>
+</body>
+</html>
